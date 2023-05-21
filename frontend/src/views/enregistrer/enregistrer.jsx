@@ -107,7 +107,7 @@ export default function Enregistrer(){
 
         if(userChoix && statutMDP && statutCouriel){
             //this will do a post for an etudiant
-            const res = await fetch(`${process.env.HOST}/enregistrement/etudiant`,{
+            const res = await fetch(`https://finalproj-backend.onrender.com/enregistrement/etudiant`,{
                 method: 'POST',
                 body: JSON.stringify(etudiantInfo),
                 headers: {
