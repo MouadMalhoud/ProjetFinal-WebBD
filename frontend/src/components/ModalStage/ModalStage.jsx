@@ -92,7 +92,7 @@ export default function ModalStage(props){
     if(user.isStudent){
         return(
             <>
-            <div className='modal'  onClick={props.onClose}>
+            <div className='modal'>
                 <div className='modal-content'>
                     <p>Enterprise: {props.nomEnterprise}</p>
                     <p>Nom d'employeur: {props.nomEmployeur}</p>
@@ -112,7 +112,7 @@ export default function ModalStage(props){
     }else{
         return (
             <>
-                <div className='modal' onClick={props.onClose}>
+                <div className='modal'>
                     <div className='modal-content'>
                         <p>Enterprise: {props.nomEnterprise}</p>
                         <p>Nom d'employeur: {props.nomEmployeur}</p>
@@ -132,7 +132,7 @@ export default function ModalStage(props){
                                     </li>
                                     )
                         })} 
-                        </ul> </>: <p>Aucun etudiant ont appliquer</p>} 
+                        </ul> </>: <p></p>} 
                         {employeurOutput ? <button onClick={deleteStage}>Delete le stage</button> : <p></p>}
                         <button onClick={props.onClose}>Fermer</button>
                     </div>
