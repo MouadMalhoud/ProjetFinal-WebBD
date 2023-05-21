@@ -111,7 +111,8 @@ export default function Enregistrer(){
                 method: 'POST',
                 body: JSON.stringify(etudiantInfo),
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    "Access-Control-Allow-Origin": "*",
                 }
             })
             const response = await res.json()
