@@ -34,7 +34,7 @@ export default function AjouterStage(){
         if(leStage.numDePosDispo < 1 || leStage.descriptionDuStage.length < 8 ){
             changerStatus( "Remplissez toute les criteres")
         }else{
-            const res = await fetch(`${process.env.HOST}/creerstage`,{
+            const res = await fetch(`https://finalproj-backend.onrender.com/creerstage`,{
             method: 'POST',
             body: JSON.stringify(leStage),
             headers: {

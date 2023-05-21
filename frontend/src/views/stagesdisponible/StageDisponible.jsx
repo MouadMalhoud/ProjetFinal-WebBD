@@ -10,7 +10,7 @@ export default function StageDisponible(){
     useEffect(()=>{
         
         const fetching = async () =>{
-            const res =await fetch(`${process.env.HOST}/creerstage/fetchstage`)
+            const res =await fetch(`https://finalproj-backend.onrender.com/creerstage/fetchstage`)
             const { message } = await res.json()
             changerLesStage(message)
         

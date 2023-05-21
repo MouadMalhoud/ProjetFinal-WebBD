@@ -32,7 +32,7 @@ export default function ModalStage(props){
     async function deleteStage(){
         
 
-        const res = await fetch(`${process.env.HOST}/creerstage/deletestage`,{
+        const res = await fetch(`https://finalproj-backend.onrender.com/creerstage/deletestage`,{
             method: 'POST',
             body: JSON.stringify(
             {
@@ -45,7 +45,7 @@ export default function ModalStage(props){
         window.location.reload(true);
     }
     async function AppliquerStage(){
-        const res = await fetch(`${process.env.HOST}/creerstage/appliquer`,{
+        const res = await fetch(`https://finalproj-backend.onrender.com/creerstage/appliquer`,{
             method: 'POST',
             body: JSON.stringify(
             {
@@ -61,7 +61,7 @@ export default function ModalStage(props){
     }
 
     async function fetchEtudiants(){
-        const res =await fetch(`${process.env.HOST}/creerstage/fetchetudiants`,{
+        const res =await fetch(`https://finalproj-backend.onrender.com/creerstage/fetchetudiants`,{
             method: 'POST',
             body: JSON.stringify(
             {

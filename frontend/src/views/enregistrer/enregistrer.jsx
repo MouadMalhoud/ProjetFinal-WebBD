@@ -125,7 +125,8 @@ export default function Enregistrer(){
             }
         }else if(userChoix === false && statutMDP && statutCouriel){
             //this will do a post for an employeur
-            const res = await fetch(`${process.env.HOST}/enregistrement/employeur`,{
+            
+            const res = await fetch(`https://finalproj-backend.onrender.com/enregistrement/employeur`,{
                 method: 'POST',
                 body: JSON.stringify(employeurInfo),
                 headers: {
