@@ -41,6 +41,7 @@ Frontend:
 
 Hosting:
 Backend: Backend hosting was done using a service called Render, where I simply linked it to my GitHub repository and added my environment variables to the hosting.
+
 Frontend: Frontend hosting was done using a service called Vercel, which made it easy by linking my GitHub repository and selecting my repository.
 
 
