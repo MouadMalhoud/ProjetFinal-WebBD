@@ -24,7 +24,6 @@ Implementation Results:
 Libraries Used:
 
 Backend:
-
 • BcryptJS: Used to hash passwords for secure storage in the database.
 
 • Cors: Allows efficient communication between the frontend and backend.
@@ -34,7 +33,6 @@ Backend:
 
 
 Frontend:
-
 • React-Redux: Used for global state sharing in React, which allowed knowing if a user is logged in and accessing their information since it was stored in the global state.
 
 • React-persist: Stores react-redux states in local storage so that the state persists after a refresh.
